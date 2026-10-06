@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FEXPO ITSEC SUCRE</title>
+</head>
+<body>
+
+    <h1>FEXPO ITSEC SUCRE</h1>
+
+    <!-- Botones de pestañas -->
+    <button onclick="pestana1()">Carátula</button>
+    <button onclick="pestana2()">Stand 1</button>
+    <button onclick="pestana3()">Stand 2</button>
+    <button onclick="pestana4()">Stand 3</button>
+
+    <br><br>
+
+    <!-- PESTAÑA 1 -->
+    <div id="p1" style="display: block;">
+        <h2>Carátula</h2>
+        <label>Nombres</label>
+        <input type="text" id="nombres">
+        <br><br>
+        <label>Apellidos</label>
+        <input type="text" id="apellidos">
+        <br><br>
+        <label>Carrera</label>
+        <input type="text" id="carrera">
+        <br><br>
+        <label>Materia</label>
+        <input type="text" id="materia">
+        <br><br>
+        <button onclick="saludo()">Saludo</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <!-- PESTAÑA 2 -->
+    <div id="p2" style="display: none;">
+        <h2>Stand 1</h2>
+        <label>Nombre del emprendimiento</label>
+        <input type="text" id="stand1_nombre">
+        <br><br>
+        <label>¿Qué venden?</label>
+        <input type="text" id="stand1_venta">
+        <br><br>
+        <label>Dirección</label>
+        <input type="text" id="stand1_direccion">
+        <br><br>
+        
+        <h3>Fotografías del stand</h3>
+        <img src="foto1.jpg" width="150">
+        <img src="foto2.jpg" width="150">
+        <img src="foto_estudiante.jpg" width="150">
+        <br><br>
+
+        <h3>Video entrevista (Máx 20 seg)</h3>
+        <video width="200" controls>
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- PESTAÑA 3 -->
+    <div id="p3" style="display: none;">
+        <h2>Stand 2</h2>
+        <label>Nombre del emprendimiento</label>
+        <input type="text" id="stand2_nombre">
+        <br><br>
+        <label>¿Qué venden?</label>
+        <input type="text" id="stand2_venta">
+        <br><br>
+        <label>Dirección</label>
+        <input type="text" id="stand2_direccion">
+        <br><br>
+
+        <h3>Fotografías del stand</h3>
+        <img src="foto3.jpg" width="150">
+        <img src="foto4.jpg" width="150">
+        <img src="foto_estudiante2.jpg" width="150">
+        <br><br>
+
+        <h3>Video entrevista (Máx 20 seg)</h3>
+        <video width="200" controls>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- PESTAÑA 4 -->
+    <div id="p4" style="display: none;">
+        <h2>Stand 3</h2>
+        <label>Nombre del emprendimiento</label>
+        <input type="text" id="stand3_nombre">
+        <br><br>
+        <label>¿Qué venden?</label>
+        <input type="text" id="stand3_venta">
+        <br><br>
+        <label>Dirección</label>
+        <input type="text" id="stand3_direccion">
+        <br><br>
+
+        <h3>Fotografías del stand</h3>
+        <img src="foto5.jpg" width="150">
+        <img src="foto6.jpg" width="150">
+        <img src="foto_estudiante3.jpg" width="150">
+        <br><br>
+
+        <h3>Video entrevista (Máx 20 seg)</h3>
+        <video width="200" controls>
+            <source src="video3.mp4">
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
